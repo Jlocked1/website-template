@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#text {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    color: red;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
