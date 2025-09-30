@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template-Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Jhon Doe</h1>
+    <table>
+        <tr>
+            <td>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea
+                    commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla
+                    pariatur.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est
+                    laborum.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <div class="tables-container">
+        <table id="skills">
+            <tr>
+                <th>Competências</th>
+            </tr>
+            <tr>
+                <td>Linguagem C</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+            </tr>
+        </table>
+
+        <table id="social-media">
+            <tr>
+                <th>Redes Sociais</th>
+            </tr>
+            <tr>
+                <td><a href="https://www.linkedin.com/in/seu-perfil">LinkedIn</a></td>
+            </tr>
+            <tr>
+                <td><a href="github.com/seu-usuario">GitHub</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.instagram.com/seu-usuario">Instagram</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.facebook.com/seu-usuario">Facebook</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://twitter.com/seu-usuario">Twitter</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+<script>
+    function typeWriter(elemento, texto, velocidade) {
+        let i = 0;
+        elemento.innerHTML = '';
+
+        function digitar() {
+            if (i < texto.length) {
+                elemento.innerHTML += texto.charAt(i);
+                i++;
+                setTimeout(digitar, velocidade);
+            }
+        }
+        digitar();
+    }
+    window.onload = function () {
+        const nome = document.querySelector('h1');
+        typeWriter(nome, 'Jhon Doe', 100);
+    }
+</script>
+
+</html>
